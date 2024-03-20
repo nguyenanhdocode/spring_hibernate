@@ -14,7 +14,9 @@ public class DispatcherResolverInit extends AbstractAnnotationConfigDispatcherSe
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null;
+        return new Class[] {
+            HibernateConfig.class
+        };
     }
 
     @Override
